@@ -16,6 +16,8 @@ This repository contains implementations of various numerical solvers for simula
    - **Libraries**: `numpy`, `scipy.sparse`, `scipy.sparse.linalg`, `matplotlib`
    - **Key equations**: Diffusion equation with a point source
 
+---
+
 ### 3. **Bloch Equation Solver (Euler and Improved Euler Methods)**
    This solver computes the time evolution of magnetization in the presence of a magnetic field along the z-axis using the Bloch equation. The code implements both the standard Euler method and the Improved Euler method for better accuracy.
 
