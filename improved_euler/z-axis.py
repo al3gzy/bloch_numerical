@@ -3,18 +3,12 @@ import matplotlib.pyplot as plt
 
 import numpy as np
 
-gamma = 2.675e8  # Gyromagnetic ratio for protons (rad/s/T)
-
-B0 = np.array([0, 0, 0.03])  # Tesla, tipično 3T za medicinski MRI (može i 7T za visokopoljni)
-
-M0 = np.array([1e-6, 2e-6, 1e-6])  # Normalizovane vrednosti magnetizacije (prosečne za biološka tkiva)
-
-dt = 1e-6  # Manji vremenski korak (1 μs) jer su procesi brži u visokom polju
-
-T_max = 0.05  # 50 ms, dovoljno da se vide relaksacioni efekti
-
-N = int(T_max / dt)  # Broj vremenskih koraka
-
+gamma = 2.675e8  
+B0 = np.array([0, 0, 0.03])  
+M0 = np.array([1e-6, 2e-6, 1e-6])
+dt = 1e-6
+T_max = 0.05 
+N = int(T_max / dt) 
 
 def bloch_field_z(M, gamma, B0):
     dM_x = gamma * M[1] * B0[2]
