@@ -1,4 +1,4 @@
-# Numerical Solvers for Bloch and Bloch-Torrey equations
+# Numerical Solvers for Bloch and Bloch-Torrey Equations
 
 This repository contains implementations of various numerical solvers for simulating magnetization dynamics under different conditions. The main models include constant fields, linear gradients, point source fields and evolution in rotating reference frames. The simulations use sparse matrices for efficient computation and provide 3D visualizations of the results.
 
